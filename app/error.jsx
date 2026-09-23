@@ -1,26 +1,34 @@
 "use client";
 
-export default function Error({ reset }) {
+export default function Error({ error, reset }) {
   return (
-    <div className="flex min-h-[70vh] items-center justify-center bg-zinc-950 text-center">
-
+    <main className="flex min-h-[80vh] items-center justify-center bg-[#080909] px-5 text-center">
       <div>
-        <h1 className="text-3xl font-black">
-          SOMETHING WENT WRONG
+        <p className="text-xs font-black uppercase tracking-[0.3em] text-[#c8ff00]">
+          FitLog
+        </p>
+
+        <h1 className="mt-4 text-4xl font-black uppercase text-white">
+          Something Went Wrong
         </h1>
 
-        <p className="mt-3 text-zinc-500">
-          We couldn't load the workout library.
+        <p className="mt-4 text-zinc-500">
+          We can&apos;t load the workout library.
         </p>
+
+        {process.env.NODE_ENV === "development" && (
+          <p className="mx-auto mt-4 max-w-xl text-sm text-red-400">
+            {error?.message}
+          </p>
+        )}
 
         <button
           onClick={() => reset()}
-          className="mt-6 bg-[#ccff00] px-6 py-3 font-black text-black"
+          className="mt-8 bg-[#c8ff00] px-8 py-4 text-sm font-black uppercase text-black hover:bg-[#d8ff4d]"
         >
-          TRY AGAIN
+          Try Again
         </button>
       </div>
-
-    </div>
+    </main>
   );
 }

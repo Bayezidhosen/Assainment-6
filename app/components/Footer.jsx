@@ -1,16 +1,19 @@
-import { Dumbbell } from "lucide-react";
-
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-800 bg-zinc-950">
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 sm:flex-row sm:items-center sm:justify-between">
+    <footer className="border-t border-white/10 bg-[#0e1014]">
+      <div className="mx-auto flex min-h-[72px] max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
 
-        <div className="flex items-center gap-2 font-black">
-          <Dumbbell className="text-[#ccff00]" />
-          FITLOG
+        <div className="flex items-center gap-2">
+          <span className="text-lg text-[#c8ff00]">
+            ⚡
+          </span>
+
+          <span className="text-sm font-black text-white">
+            FITLOG
+          </span>
         </div>
 
-        <p className="text-sm text-zinc-500">
+        <p className="text-right text-[10px] text-zinc-500">
           © 2026 FitLog — Workout Library. Train hard, log honest.
         </p>
 
