@@ -10,7 +10,7 @@ export default function Hero() {
 
         <div className="relative overflow-hidden rounded-xl border border-white/10 bg-[#15171c]">
 
-          <div className="grid min-h-[320px] items-center lg:grid-cols-[1.2fr_0.8fr]">
+          <div className="grid min-h-80 items-center lg:grid-cols-[1.2fr_0.8fr]">
 
             {/* LEFT */}
             <div className="relative z-10 px-6 py-10 sm:px-8 lg:px-10">
@@ -19,7 +19,7 @@ export default function Hero() {
                 Workout Library
               </p>
 
-              <h1 className="max-w-[620px] text-4xl font-black uppercase leading-[0.9] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[58px]">
+              <h1 className="max-w-155 text-4xl font-black uppercase leading-[0.9] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[58px]">
                 Train With Intent. Log
                 <br />
                 Every Set
@@ -46,7 +46,7 @@ export default function Hero() {
 
 
             {/* RIGHT IMAGE */}
-            <div className="relative hidden min-h-[320px] items-end justify-center lg:flex">
+            <div className="relative hidden min-h-80 items-end justify-center lg:flex">
 
               {/* RIGHT IMAGE */}
 <div className="relative hidden min-h-80 items-end justify-center lg:flex">

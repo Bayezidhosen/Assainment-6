@@ -14,7 +14,7 @@ export default function NotFound() {
         </h1>
 
         <p className="mt-3 text-zinc-500">
-          The workout you're looking for doesn't exist.
+          The workout you&apos;re looking for doesn&apos;t exist.
         </p>
 
         <Link
