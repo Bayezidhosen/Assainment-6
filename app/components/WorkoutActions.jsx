@@ -67,7 +67,7 @@ export default function WorkoutActions({ workout }) {
       {/* Save */}
       <button
         onClick={handleSave}
-        className="flex flex-1 items-center justify-center gap-2 border border-white/15 bg-white/[0.02] px-5 py-4 text-xs font-black uppercase tracking-wide text-white transition hover:border-[#c8ff00] hover:text-[#c8ff00]"
+        className="flex flex-1 items-center justify-center gap-2 border border-white/15 bg-white/2 px-5 py-4 text-xs font-black uppercase tracking-wide text-white transition hover:border-[#c8ff00] hover:text-[#c8ff00]"
       >
         <BookmarkPlus size={18} />
 

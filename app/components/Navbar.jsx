@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#080909]/95 backdrop-blur-md">
-      <nav className="mx-auto flex h-[76px] max-w-350 items-center justify-between px-5 sm:px-8">
+      <nav className="mx-auto flex h-19 max-w-350 items-center justify-between px-5 sm:px-8">
 
         {/* Logo */}
         <Link

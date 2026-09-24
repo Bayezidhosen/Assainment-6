@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Clock3, Flame, Star } from "lucide-react";
 
 export default function WorkoutCard({ workout }) {
@@ -8,15 +9,16 @@ export default function WorkoutCard({ workout }) {
       className="group overflow-hidden rounded-2xl border border-white/10 bg-[#111313] transition duration-300 hover:-translate-y-1 hover:border-[#c8ff00]/50"
     >
       {/* Image */}
-      <div className="relative aspect-[4/3] overflow-hidden bg-zinc-900">
-        <img
+      <div className="relative aspect-4/3 overflow-hidden bg-zinc-900">
+        <Image
           src={workout.image}
           alt={workout.name}
+          fill
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
 
         {/* Image overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linner-to-t from-black/70 via-transparent to-transparent" />
 
         {/* Category */}
         <div className="absolute left-4 top-4 flex flex-wrap gap-2">
