@@ -240,7 +240,7 @@ export default function MyPlan() {
                   : "text-zinc-500 hover:text-white"
               }`}
             >
-              Today's Plan
+              Today&apos;s Plan
             </button>
 
 
@@ -614,7 +614,7 @@ function WorkoutCard({
 
 function EmptyState() {
   return (
-    <div className="flex min-h-[220px] flex-col items-center justify-center rounded-xl border border-dashed border-white/10 bg-[#0f1216] px-5 text-center">
+    <div className="flex min-h-55 flex-col items-center justify-center rounded-xl border border-dashed border-white/10 bg-[#0f1216] px-5 text-center">
 
       <h2 className="text-lg font-black uppercase text-white">
         NOTHING HERE YET
