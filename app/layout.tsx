@@ -1,11 +1,10 @@
 import "./globals.css";
-
-import type { ReactNode } from "react";
 import { Toaster } from "react-hot-toast";
+import type { ReactNode } from "react";
 
-import { FitlogProvider } from "./context/FitlogContext";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import { FitlogProvider } from "../app/context/FitlogContext";
+import Navbar from "../app/components/Navbar";
+import Footer from "../app/components/Footer";
 
 export const metadata = {
   title: "FitLog — Workout Library",
@@ -19,21 +18,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#08090b] text-white">
+      <body className="min-h-screen bg-[#080909]">
 
         <FitlogProvider>
 
-          <div className="flex min-h-screen flex-col">
+          <Navbar />
 
-            <Navbar />
+          <main className="min-h-[calc(100vh-76px)]">
+            {children}
+          </main>
 
-            <main className="flex-1">
-              {children}
-            </main>
-
-            <Footer />
-
-          </div>
+          <Footer />
 
           <Toaster
             position="top-right"

@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#0e1014]">
-      <div className="mx-auto flex min-h-[72px] max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
+      <div className="mx-auto flex min-h-18 max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
 
         <div className="flex items-center gap-2">
           <span className="text-lg text-[#c8ff00]">
-            ⚡
+            <img src="/assets/logo.png" alt="" />
           </span>
 
           <span className="text-sm font-black text-white">

@@ -2,6 +2,7 @@
 
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Check,
   ChevronDown,
@@ -168,7 +169,7 @@ export default function MyPlan() {
           MAIN CONTENT
       ================================================= */}
 
-      <div className="mx-auto max-w-[1400px] px-5 py-10 sm:px-8 lg:px-10 lg:py-12">
+      <div className="mx-auto max-w-350 px-5 py-10 sm:px-8 lg:px-10 lg:py-12">
 
         {/* =================================================
             PAGE HEADER
@@ -340,24 +341,24 @@ export default function MyPlan() {
       </div>
 
 
-      {/* =================================================
+      {/* {/* =================================================
           FOOTER
       ================================================= */}
 
-      <footer className="border-t border-white/10 bg-[#0e1014]">
+      <footer className="">
 
-        <div className="mx-auto flex max-w-[1400px] flex-col gap-4 px-5 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
+        <div className="mx-auto flex max-w-350 flex-col gap-4 px-5 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
 
           {/* Logo */}
 
           <div className="flex items-center gap-2">
 
             <span className="text-lg text-[#c8ff00]">
-              ⚡
+              
             </span>
 
             <span className="text-sm font-black">
-              FITLOG
+              
             </span>
 
           </div>
@@ -366,7 +367,7 @@ export default function MyPlan() {
           {/* Copyright */}
 
           <p className="text-[10px] text-zinc-500">
-            © 2026 FitLog — Workout Library. Train hard, log honest.
+            
           </p>
 
         </div>
@@ -427,15 +428,17 @@ function WorkoutCard({
           IMAGE
       ================================================= */}
 
-      <div className="h-32 overflow-hidden rounded-lg bg-[#1b1e24]">
+      <div className="relative h-32 overflow-hidden rounded-lg bg-[#1b1e24]">
 
-        <img
+        <Image
           src={workout.image}
           alt={
             workout.name ||
             "Workout"
           }
-          className="h-full w-full object-cover"
+          fill
+          sizes="(max-width: 640px) 100vw, 150px"
+          className="object-cover"
         />
 
       </div>
