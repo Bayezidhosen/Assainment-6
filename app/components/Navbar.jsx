@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Dumbbell, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useFitlog } from "../context/FitlogContext";
@@ -19,9 +20,10 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-2"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#c8ff00] text-black">
-            <Dumbbell size={20} strokeWidth={3} />
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg  text-black">
+            
           </div>
+          <Image src="/logo.png" alt="FITLOG logo" width={30} height={36} priority />
 
           <span className="text-xl font-black tracking-tight">
             FITLOG
