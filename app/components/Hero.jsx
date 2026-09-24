@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import heroimage from "../../public/banner.png"
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
 
               <p className="mt-5 max-w-xl text-xs leading-5 text-zinc-400 sm:text-sm">
                 FitLog is a dark, no-nonsense gym companion: pick a lift,
-                lock it into today's plan, and watch the week's work add up.
+                lock it into today&apos;s plan, and watch the week&apos;s work add up.
               </p>
 
               <Link
@@ -52,7 +53,7 @@ export default function Hero() {
 <div className="relative hidden min-h-80 items-end justify-center lg:flex">
 
   <Image
-    src="/assets/banner.png"
+    src={heroimage}
     alt="Workout illustration"
     width={350}
     height={350}

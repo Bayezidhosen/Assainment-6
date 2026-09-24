@@ -30,14 +30,14 @@ export default function WorkoutGrid({ workouts }) {
       id="library"
       className="border-b border-white/10 bg-[#080909] px-5 py-20 sm:px-8"
     >
-      <div className="mx-auto max-w-[1400px]">
+      <div className="mx-auto max-w-350">
 
         {/* Section Header */}
         <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
 
           <div>
             <div className="flex items-center gap-3">
-              <span className="h-[2px] w-7 bg-[#c8ff00]" />
+              <span className="h-0.5 w-7 bg-[#c8ff00]" />
 
               <p className="text-xs font-black uppercase tracking-[0.3em] text-[#c8ff00]">
                 Explore

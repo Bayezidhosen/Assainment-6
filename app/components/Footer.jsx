@@ -5,7 +5,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-2">
           <span className="text-lg text-[#c8ff00]">
-            <img src="/assets/logo.png" alt="" />
+            <img src="../../public/logo.png" alt="" />
           </span>
 
           <span className="text-sm font-black text-white">
